@@ -24,7 +24,8 @@ const P={g1:'#5fae4a',g2:'#6fbe52',g3:'#4e9a40',g4:'#89cf5e',d1:'#e2c387',d2:'#c
 const map=[];for(let y=0;y<ROWS;y++){map.push(new Array(COLS).fill(0));}
 const HOUSES={ // tile coords of top-left, size in px
  Friday:{x:176,y:34,w:48,h:40},Gladdus:{x:56,y:42,w:42,h:36},Coach:{x:300,y:42,w:42,h:36},
- Clima:{x:30,y:112,w:36,h:42},ResI:{x:330,y:110,w:42,h:36},Dos:{x:96,y:166,w:40,h:34},Mark:{x:236,y:166,w:40,h:34}};
+ Clima:{x:30,y:112,w:36,h:42},ResI:{x:330,y:110,w:42,h:36},Dos:{x:96,y:166,w:40,h:34},Mark:{x:236,y:166,w:40,h:34},
+ Luke:{x:168,y:164,w:38,h:38}};
 function door(h){return {x:h.x+h.w/2,y:h.y+h.h};}
 function carve(x0,y0,x1,y1){for(let y=Math.min(y0,y1);y<=Math.max(y0,y1);y++)for(let x=Math.min(x0,x1);x<=Math.max(x0,x1);x++)if(map[y]&&map[y][x]!==undefined&&map[y][x]!==3)map[y][x]=1;}
 // forest border
@@ -82,13 +83,13 @@ function drawForest(){const list=[];for(let y=0;y<ROWS;y++)for(let x=0;x<COLS;x+
  for(let x=0;x<W;x+=11)list.push([x+rnd()*4,-2+rnd()*6]);
  list.sort((a,b)=>a[1]-b[1]).forEach(([x,y])=>tree(b,x,y));
  // a few interior trees and bushes
- [[150,96],[262,94],[120,132],[290,140],[30,180],[190,200]].forEach(([x,y])=>{if(walkable(x,y+8))tree(b,x,y);});
+ [[150,96],[262,94],[120,132],[290,140],[30,180],[222,206]].forEach(([x,y])=>{if(walkable(x,y+8))tree(b,x,y);});
 }
 // houses: distinct roofs, all original
 function house(c,name,h,look){const {x,y,w,h:hh}=h;const roofH=Math.floor(hh*.5),wallY=y+roofH,wallH=hh-roofH;
  px(c,x+2,y+hh-1,w,3,'rgba(0,0,0,.22)');
  // walls
- const wall={library:'#efe2c4',gym:'#f0d8b8',tower:'#e8e4dc',workshop:'#d8b48a',cafe:'#f4e0d0',shop:'#f2e6c8',manor:'#f6ead0'}[look.house]||'#efe2c4';
+ const wall={library:'#efe2c4',gym:'#f0d8b8',tower:'#e8e4dc',workshop:'#d8b48a',cafe:'#f4e0d0',shop:'#f2e6c8',manor:'#f6ead0',study:'#e9e2d6'}[look.house]||'#efe2c4';
  px(c,x+2,wallY,w-4,wallH,wall);px(c,x+2,wallY,1,wallH,P.out);px(c,x+w-3,wallY,1,wallH,P.out);px(c,x+2,wallY+wallH-1,w-4,1,P.out);
  for(let i=wallY+3;i<wallY+wallH-1;i+=4)px(c,x+3,i,w-6,1,'rgba(120,80,40,.12)');
  if(look.house==='workshop')for(let i=x+4;i<x+w-4;i+=5)px(c,i,wallY,1,wallH-1,'#b8915e');
@@ -105,13 +106,22 @@ function house(c,name,h,look){const {x,y,w,h:hh}=h;const roofH=Math.floor(hh*.5)
  // windows (glow at night handled in overlay)
  const wy=wallY+3;[[x+6,wy],[x+w-12,wy]].forEach(([a,bq])=>{if(wallH<12)return;px(c,a-1,bq-1,8,7,P.out);px(c,a,bq,6,5,'#8fd0f0');px(c,a+3,bq,1,5,P.out);px(c,a,bq+2,6,1,P.out);px(c,a,bq,2,1,'#d8f4ff');px(c,a-1,bq+5,8,2,'#7a4a24');px(c,a,bq+5,1,1,'#ff8fb0');px(c,a+3,bq+5,1,1,'#f5e050');px(c,a+5,bq+5,1,1,'#ff6a5a');});
  // chimney + per-house flair
- if(look.house!=='tower'){px(c,x+w-12,y-4,5,8,'#9a6a4a');px(c,x+w-13,y-5,7,2,'#6b4526');}
+ if(look.house!=='tower'&&look.house!=='study'){px(c,x+w-12,y-4,5,8,'#9a6a4a');px(c,x+w-13,y-5,7,2,'#6b4526');}
  if(look.house==='tower'){px(c,x+w/2-1,y-10,2,10,'#6a6a70');px(c,x+w/2-5,y-10,10,1,'#6a6a70');px(c,x+w/2+4,y-12,3,3,'#f0f0f0');px(c,x+w/2-7,y-12,3,3,'#f0f0f0');} // anemometer
  if(look.house==='library'){px(c,x+w/2-6,wallY-6,12,5,'#f6ead0');px(c,x+w/2-6,wallY-6,12,1,P.out);px(c,x+w/2-4,wallY-5,3,3,'#c84a3a');px(c,x+w/2,wallY-5,3,3,'#3a72c8');}
  if(look.house==='gym'){px(c,x+w/2-7,wallY-5,14,3,'#555');px(c,x+w/2-9,wallY-7,3,7,'#333');px(c,x+w/2+6,wallY-7,3,7,'#333');}
  if(look.house==='cafe'){for(let i=x+2;i<x+w-2;i+=4){px(c,i,wallY+1,2,3,'#ffffff');px(c,i+2,wallY+1,2,3,rc);}}
  if(look.house==='shop'){px(c,x+w+1,wallY+4,6,6,'#e8d090');px(c,x+w+1,wallY+4,6,1,P.out);px(c,x+w+3,wallY+6,2,2,'#c83a50');}
  if(look.house==='manor'){px(c,x+w/2-1,y-8,2,8,'#7a5a3a');px(c,x+w/2+1,y-8,6,4,'#ffd34a');px(c,x+w/2+1,y-8,6,1,'#c8962a');}
+ if(look.house==='study'){ // little stone study house: bell-cote, round window, arched door, book sign
+  const cx=x+w/2;px(c,cx-4,y-12,8,13,'#d8d0c2');px(c,cx-4,y-12,1,13,P.out);px(c,cx+3,y-12,1,13,P.out); // bell-cote
+  for(let r=0;r<5;r++){px(c,cx-5+r,y-13-r+1,10-2*r,1,r%2?rc:shade(rc,-30));}
+  px(c,cx-1,y-18,2,2,'#e8c050'); // finial knob
+  px(c,cx-2,y-9,4,5,'#3a2a20');px(c,cx-1,y-8,2,3,'#e8c050');px(c,cx-1,y-5,2,1,'#c89a30'); // bell
+  px(c,cx-3,wallY+1,6,5,P.out);px(c,cx-2,wallY+2,4,3,'#f0c860');px(c,cx-1,wallY+1,2,1,P.out);px(c,cx-1,wallY+2,2,3,'#9ad0f0'); // round window
+  const ddx=x+w/2-3,ddy=y+hh-9;px(c,ddx,ddy-1,6,1,P.out);px(c,ddx+1,ddy-2,4,1,P.out);px(c,ddx+1,ddy-1,4,1,'#8a5228'); // arched door top
+  px(c,x+w+1,wallY+3,2,12,'#7a4a24');px(c,x+w-1,wallY+3,8,1,'#7a4a24'); // sign post + arm
+  px(c,x+w+2,wallY+5,8,6,P.out);px(c,x+w+3,wallY+6,3,4,'#ffffff');px(c,x+w+6,wallY+6,3,4,'#f4eee0');px(c,x+w+6,wallY+6,1,4,'#b84a3a');px(c,x+w+4,wallY+7,1,1,'#8a8a8a');px(c,x+w+7,wallY+8,1,1,'#8a8a8a');} // open book
  if(look.house==='workshop'){px(c,x-6,y+hh-8,6,6,'#b07a40');px(c,x-6,y+hh-8,6,1,P.out);px(c,x-5,y+hh-5,4,1,'#8a5a30');px(c,x-10,y+hh-4,4,4,'#9a9aa0');}
 }
 function shade(hex,amt){const n=parseInt(hex.slice(1),16);let r=(n>>16)+amt,g2=((n>>8)&255)+amt,bb=(n&255)+amt;r=Math.max(0,Math.min(255,r));g2=Math.max(0,Math.min(255,g2));bb=Math.max(0,Math.min(255,bb));return '#'+((1<<24)+(r<<16)+(g2<<8)+bb).toString(16).slice(1);}
@@ -122,7 +132,7 @@ const LAMPS=[[170,140],[232,140],[100,140],[300,140]];
 function buildBG(cfg){seed=1337;drawGround();drawForest();for(const k in HOUSES){const look=(cfg[k]&&cfg[k].look)||{house:'shop',roof:'#a85a3a'};house(b,k,HOUSES[k],look);}
  well(b);LAMPS.forEach(([x,y])=>lamp(b,x,y));
  // signposts
- px(b,190,150,2,8,'#7a4a24');px(b,183,146,16,6,'#c89058');px(b,183,146,16,1,P.out);px(b,185,148,12,1,'#7a4a24');px(b,185,150,8,1,'#7a4a24');}
+ px(b,140,150,2,8,'#7a4a24');px(b,133,146,16,6,'#c89058');px(b,133,146,16,1,P.out);px(b,135,148,12,1,'#7a4a24');px(b,135,150,8,1,'#7a4a24');}
 // ---- characters ----
 function drawChar(c,ch,t){const L=ch.look,x=Math.round(ch.x),y=Math.round(ch.y),f=ch.dir<0;const walk=ch.moving?Math.floor(t/140)%2:0,bob=ch.moving?0:(Math.floor(t/600+ch.phase)%2);
  const X=(dx)=>f?x-dx-1:x+dx; const p=(dx,dy,w,h,col)=>{for(let i=0;i<w;i++)px(c,X(dx+i),y+dy,1,h,col);};
@@ -134,6 +144,7 @@ function drawChar(c,ch,t){const L=ch.look,x=Math.round(ch.x),y=Math.round(ch.y),
  p(-5,-7+bob+(walk?1:0),2,3,P.skin);p(3,-7+bob+(walk?0:1),2,3,P.skin);
  if(L.scarf){p(-3,-9+bob,6,2,'#ffcc40');p(1,-8+bob,2,3,'#ffcc40');}
  if(L.satchel){p(2,-7+bob,3,4,'#8a5a30');p(-3,-8+bob,6,1,'#6b4526');}
+ if(L.book){p(-3,-7+bob,6,5,P.out);p(-2,-6+bob,4,4,'#b84a3a');p(-2,-6+bob,4,1,'#d86a50');p(-1,-5+bob,1,3,'#f4eee0');p(1,-5+bob,1,3,'#e8c050');} // carried book
  // head
  const hy=-17+bob;p(-5,hy,10,9,P.out);p(-4,hy+1,8,7,P.skin);p(-4,hy+6,8,1,shade(P.skin,-18));
  const blink=(Math.floor(t/90+ch.phase*37)%60)===0;
@@ -157,10 +168,11 @@ const LOOKS={
  Clima:{hat:'#7d8a99',shirt:'#9fb0c0',house:'tower',roof:'#5f7385',umbrella:true},
  ResI:{hat:'#f0c020',shirt:'#3a72c8',house:'workshop',roof:'#2f5fa8',hardhat:true},
  Dos:{hat:'#8a4cc8',shirt:'#a86ad8',house:'cafe',roof:'#7a3cb0',scarf:true},
- Mark:{hat:'#c83a50',shirt:'#d85a6a',house:'shop',roof:'#a83040',satchel:true}};
+ Mark:{hat:'#c83a50',shirt:'#d85a6a',house:'shop',roof:'#a83040',satchel:true},
+ Luke:{hat:'#6b4a2a',shirt:'#3f9a7a',house:'study',roof:'#b8683a',book:true}};
 let bots=[],selected=null,lastData=null;
 const CHATTER={Friday:['Checking the schedule','Coffee for the team?','Morning huddle!'],Gladdus:['Shelving books','Indexing…','Shh, reading'],Coach:['Stretch first!','Hydrate!','Go for a walk?'],
- Clima:['Clouds rolling in','Checking radar','Wind check'],ResI:['Reading the news','Fresh headlines','Site walk'],Dos:["What's hot today?",'Scouting trends','Ooh, new idea'],Mark:['Ad trends…','Taking notes','Market stroll']};
+ Clima:['Clouds rolling in','Checking radar','Wind check'],ResI:['Reading the news','Fresh headlines','Site walk'],Dos:["What's hot today?",'Scouting trends','Ooh, new idea'],Mark:['Ad trends…','Taking notes','Market stroll'],Luke:['Reading up','Making notes','Study time!']};
 const STATE_LABEL={working:'● working now',filed:'📜 filed a report',idle:'idle',asleep:'asleep'};
 async function poll(){try{const r=await fetch('status.json?t='+Date.now(),{cache:'no-store'});lastData=await r.json();sync();}catch(e){}}
 function sync(){lastData.forEach((d,i)=>{if(!HOUSES[d.name])return;let ch=bots.find(c=>c.key===d.name);
