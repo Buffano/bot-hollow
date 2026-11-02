@@ -27,3 +27,26 @@ canvas{image-rendering:pixelated;image-rendering:crisp-edges;border:4px solid #3
  .bot{padding:6px 4px;gap:7px}
  .rl{font-size:12px}.la{font-size:12.5px}
 }
+
+/* ---- round 3: villager card, egg tracker, toast ---- */
+#stage{position:relative}
+#card{position:absolute;z-index:5;min-width:170px;max-width:240px;background:#fff8e4;color:#3a2a1a;border:3px solid #3b2a1a;border-radius:8px;box-shadow:0 0 0 2px #c9a25a,0 8px 18px #0008;padding:8px 26px 8px 10px;font-size:12.5px;line-height:1.35;pointer-events:auto}
+#card.hide,#toast.hide{display:none}
+#card .cx{position:absolute;top:2px;right:3px;width:22px;height:22px;border:0;background:none;color:#7a4a24;font:bold 18px/20px "Trebuchet MS",Verdana,sans-serif;cursor:pointer;padding:0}
+#card .cn{display:flex;align-items:center;gap:6px;font-size:15px}
+#card .cn i{display:inline-block;width:11px;height:11px;border-radius:3px;border:2px solid #1a120a}
+#card .cr{color:#7a5a32;font-size:12px;margin-bottom:3px}
+#card .ca{font-weight:bold}
+#card .cs{color:#4a7a32}
+#card .ch{color:#6b4a2a;font-size:11.5px;margin-top:2px}
+#toast{position:absolute;z-index:6;left:50%;top:10px;transform:translateX(-50%);background:#ffe68a;color:#3a2a1a;border:3px solid #3b2a1a;border-radius:20px;padding:6px 14px;font-weight:bold;box-shadow:0 6px 14px #0008;white-space:nowrap;max-width:94%;overflow:hidden;text-overflow:ellipsis;animation:tpop .35s ease-out}
+#eggs{display:inline-block;font-size:12px;color:#ffe68a;background:#4a3722;border:1px solid #c9a25a;border-radius:12px;padding:2px 9px;margin:0 0 8px}
+#eggs.pop{animation:tpop .5s ease-out}
+@keyframes tpop{0%{transform:translateX(var(--tx,0)) scale(.6)}70%{transform:translateX(var(--tx,0)) scale(1.12)}100%{transform:translateX(var(--tx,0)) scale(1)}}
+#toast{--tx:-50%}
+.hn{font-size:11px;color:#cdb98e}
+@media (max-width: 800px), (max-height: 500px){
+ #card{font-size:13px;min-width:180px}
+ #card .cx{width:30px;height:30px;font-size:22px}
+ #toast{font-size:13px;top:6px}
+}
