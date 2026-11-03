@@ -50,3 +50,30 @@ canvas{image-rendering:pixelated;image-rendering:crisp-edges;border:4px solid #3
  #card .cx{width:30px;height:30px;font-size:22px}
  #toast{font-size:13px;top:6px}
 }
+
+/* ---- round 4: egg row (counter + clue + sound), clue popup, bulletin board popup ---- */
+#eggrow{display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin:0 0 8px}
+#eggrow #eggs{margin:0}
+#cluebtn,#sndbtn{font:bold 12px "Trebuchet MS",Verdana,sans-serif;color:#ffe68a;background:#4a3722;border:1px solid #c9a25a;border-radius:12px;padding:2px 9px;cursor:pointer;line-height:1.5;min-height:22px}
+#cluebtn.ready{background:#7a5a1a;color:#fff6c0;box-shadow:0 0 0 1px #ffd970 inset}
+#cluebtn:hover,#sndbtn:hover{background:#5e4630}
+#sndbtn{padding:2px 7px;min-width:30px}
+#clue{position:relative;background:#fff8e4;color:#3a2a1a;border:2px solid #3b2a1a;border-radius:8px;box-shadow:0 0 0 2px #c9a25a;padding:7px 26px 7px 9px;margin:0 0 10px;font-size:12.5px;line-height:1.4}
+#clue.hide,#news.hide{display:none}
+#clue .cl{font-weight:bold;color:#7a4a10;margin-bottom:2px}
+#clue .cn2{color:#6b5a3a;font-size:11.5px;margin-top:4px}
+#clue .cx,#news .cx{position:absolute;top:2px;right:3px;width:22px;height:22px;border:0;background:none;color:#7a4a24;font:bold 18px/20px "Trebuchet MS",Verdana,sans-serif;cursor:pointer;padding:0}
+#news{position:absolute;z-index:7;left:50%;top:50%;transform:translate(-50%,-50%);width:min(340px,88%);background:#f4e2b8;color:#3a2a1a;border:4px solid #6b4526;border-radius:8px;box-shadow:0 0 0 3px #c9a25a,0 10px 24px #000a;padding:12px 30px 12px 14px;font-size:14px;line-height:1.4}
+#news .nd{font-size:12px;color:#7a4a24;font-weight:bold;margin-bottom:6px}
+#news .nh{font:bold 18px/1.3 "Palatino Linotype","Book Antiqua",Palatino,"Times New Roman",serif;color:#2a1a0a;margin-bottom:8px}
+#news .nw{background:#fff6c0;border:1px dashed #c8962a;border-radius:6px;padding:5px 7px;font-size:13px}
+#news .nf{font-size:11px;color:#8a6a40;margin-top:7px}
+#card .cw{color:#8a5a00;font-size:11.5px;margin-top:2px;font-weight:bold}
+@media (max-width: 800px), (max-height: 500px){
+ #cluebtn,#sndbtn{font-size:13.5px;padding:5px 11px;min-height:32px;border-radius:16px}
+ #eggrow #eggs{font-size:13px;padding:5px 10px}
+ #clue{font-size:14px}
+ #news{font-size:15px;width:min(360px,92%)}
+ #news .nh{font-size:19px}
+ #news .cx,#clue .cx{width:30px;height:30px;font-size:22px}
+}
