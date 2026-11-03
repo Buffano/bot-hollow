@@ -2,64 +2,64 @@
  {
   "name": "Friday",
   "role": "Team lead",
-  "state": "working",
-  "last_active_bucket": "just now",
-  "updated_at": "2026-11-03T15:18:01Z"
+  "state": "idle",
+  "last_active_bucket": "under 1h ago",
+  "updated_at": "2026-11-03T15:43:15Z"
  },
  {
   "name": "Gladdus",
   "role": "Librarian",
-  "state": "working",
-  "last_active_bucket": "just now",
-  "updated_at": "2026-11-03T15:18:01Z"
+  "state": "idle",
+  "last_active_bucket": "under 1h ago",
+  "updated_at": "2026-11-03T15:43:15Z"
  },
  {
   "name": "Coach",
   "role": "Training coach",
-  "state": "working",
-  "last_active_bucket": "just now",
-  "updated_at": "2026-11-03T15:18:01Z"
+  "state": "idle",
+  "last_active_bucket": "under 1h ago",
+  "updated_at": "2026-11-03T15:43:15Z"
  },
  {
   "name": "Clima",
   "role": "Weather watcher",
-  "state": "working",
-  "last_active_bucket": "just now",
-  "updated_at": "2026-11-03T15:18:01Z"
+  "state": "idle",
+  "last_active_bucket": "under 1h ago",
+  "updated_at": "2026-11-03T15:43:15Z"
  },
  {
   "name": "ResI",
   "role": "Industry news",
-  "state": "working",
-  "last_active_bucket": "just now",
-  "updated_at": "2026-11-03T15:18:01Z"
+  "state": "filed",
+  "last_active_bucket": "under 1h ago",
+  "updated_at": "2026-11-03T15:43:15Z"
  },
  {
   "name": "Dos",
   "role": "Trends scout",
-  "state": "working",
-  "last_active_bucket": "just now",
-  "updated_at": "2026-11-03T15:18:01Z"
+  "state": "filed",
+  "last_active_bucket": "under 1h ago",
+  "updated_at": "2026-11-03T15:43:15Z"
  },
  {
   "name": "Mark",
   "role": "Marketing scout",
-  "state": "working",
-  "last_active_bucket": "just now",
-  "updated_at": "2026-11-03T15:18:01Z"
+  "state": "idle",
+  "last_active_bucket": "under 1h ago",
+  "updated_at": "2026-11-03T15:43:15Z"
  },
  {
   "name": "Luke",
   "role": "Study partner",
-  "state": "working",
-  "last_active_bucket": "just now",
-  "updated_at": "2026-11-03T15:18:01Z"
+  "state": "idle",
+  "last_active_bucket": "under 1h ago",
+  "updated_at": "2026-11-03T15:43:15Z"
  },
  {
   "name": "Peter",
   "role": "Web builder",
-  "state": "working",
-  "last_active_bucket": "just now",
-  "updated_at": "2026-11-03T15:18:01Z"
+  "state": "idle",
+  "last_active_bucket": "under 1h ago",
+  "updated_at": "2026-11-03T15:43:15Z"
  }
 ]
