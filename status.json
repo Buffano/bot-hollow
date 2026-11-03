@@ -3,63 +3,63 @@
   "name": "Friday",
   "role": "Team lead",
   "state": "idle",
-  "last_active_bucket": "13h ago",
-  "updated_at": "2026-11-03T06:18:21Z"
+  "last_active_bucket": "15h ago",
+  "updated_at": "2026-11-03T08:19:59Z"
  },
  {
   "name": "Gladdus",
   "role": "Librarian",
   "state": "idle",
-  "last_active_bucket": "15h ago",
-  "updated_at": "2026-11-03T06:18:21Z"
+  "last_active_bucket": "17h ago",
+  "updated_at": "2026-11-03T08:19:59Z"
  },
  {
   "name": "Coach",
   "role": "Training coach",
   "state": "idle",
-  "last_active_bucket": "3h ago",
-  "updated_at": "2026-11-03T06:18:21Z"
+  "last_active_bucket": "5h ago",
+  "updated_at": "2026-11-03T08:19:59Z"
  },
  {
   "name": "Clima",
   "role": "Weather watcher",
   "state": "idle",
-  "last_active_bucket": "13h ago",
-  "updated_at": "2026-11-03T06:18:21Z"
+  "last_active_bucket": "15h ago",
+  "updated_at": "2026-11-03T08:19:59Z"
  },
  {
   "name": "ResI",
   "role": "Industry news",
   "state": "idle",
-  "last_active_bucket": "15h ago",
-  "updated_at": "2026-11-03T06:18:21Z"
+  "last_active_bucket": "17h ago",
+  "updated_at": "2026-11-03T08:19:59Z"
  },
  {
   "name": "Dos",
   "role": "Trends scout",
   "state": "idle",
-  "last_active_bucket": "13h ago",
-  "updated_at": "2026-11-03T06:18:21Z"
+  "last_active_bucket": "15h ago",
+  "updated_at": "2026-11-03T08:19:59Z"
  },
  {
   "name": "Mark",
   "role": "Marketing scout",
   "state": "idle",
-  "last_active_bucket": "11h ago",
-  "updated_at": "2026-11-03T06:18:21Z"
+  "last_active_bucket": "13h ago",
+  "updated_at": "2026-11-03T08:19:59Z"
  },
  {
   "name": "Luke",
   "role": "Study partner",
   "state": "idle",
-  "last_active_bucket": "3h ago",
-  "updated_at": "2026-11-03T06:18:21Z"
+  "last_active_bucket": "5h ago",
+  "updated_at": "2026-11-03T08:19:59Z"
  },
  {
   "name": "Peter",
   "role": "Web builder",
   "state": "idle",
-  "last_active_bucket": "3h ago",
-  "updated_at": "2026-11-03T06:18:21Z"
+  "last_active_bucket": "5h ago",
+  "updated_at": "2026-11-03T08:19:59Z"
  }
 ]
