@@ -3,63 +3,63 @@
   "name": "Friday",
   "role": "Team lead",
   "state": "idle",
-  "last_active_bucket": "20h ago",
-  "updated_at": "2026-11-03T13:37:44Z"
+  "last_active_bucket": "21h ago",
+  "updated_at": "2026-11-03T14:25:17Z"
  },
  {
   "name": "Gladdus",
   "role": "Librarian",
   "state": "idle",
-  "last_active_bucket": "22h ago",
-  "updated_at": "2026-11-03T13:37:44Z"
+  "last_active_bucket": "23h ago",
+  "updated_at": "2026-11-03T14:25:17Z"
  },
  {
   "name": "Coach",
   "role": "Training coach",
   "state": "idle",
-  "last_active_bucket": "10h ago",
-  "updated_at": "2026-11-03T13:37:44Z"
+  "last_active_bucket": "11h ago",
+  "updated_at": "2026-11-03T14:25:17Z"
  },
  {
   "name": "Clima",
   "role": "Weather watcher",
   "state": "filed",
   "last_active_bucket": "3h ago",
-  "updated_at": "2026-11-03T13:37:44Z"
+  "updated_at": "2026-11-03T14:25:17Z"
  },
  {
   "name": "ResI",
   "role": "Industry news",
-  "state": "working",
-  "last_active_bucket": "just now",
-  "updated_at": "2026-11-03T13:37:44Z"
+  "state": "filed",
+  "last_active_bucket": "1h ago",
+  "updated_at": "2026-11-03T14:25:17Z"
  },
  {
   "name": "Dos",
   "role": "Trends scout",
   "state": "filed",
-  "last_active_bucket": "under 1h ago",
-  "updated_at": "2026-11-03T13:37:44Z"
+  "last_active_bucket": "1h ago",
+  "updated_at": "2026-11-03T14:25:17Z"
  },
  {
   "name": "Mark",
   "role": "Marketing scout",
   "state": "idle",
-  "last_active_bucket": "18h ago",
-  "updated_at": "2026-11-03T13:37:44Z"
+  "last_active_bucket": "19h ago",
+  "updated_at": "2026-11-03T14:25:17Z"
  },
  {
   "name": "Luke",
   "role": "Study partner",
   "state": "idle",
-  "last_active_bucket": "10h ago",
-  "updated_at": "2026-11-03T13:37:44Z"
+  "last_active_bucket": "11h ago",
+  "updated_at": "2026-11-03T14:25:17Z"
  },
  {
   "name": "Peter",
   "role": "Web builder",
   "state": "idle",
-  "last_active_bucket": "10h ago",
-  "updated_at": "2026-11-03T13:37:44Z"
+  "last_active_bucket": "11h ago",
+  "updated_at": "2026-11-03T14:25:17Z"
  }
 ]
