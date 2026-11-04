@@ -84,3 +84,25 @@ button.bot:hover,button.bot.sel{background:#4a3722}
  #news .cx,#clue .cx{width:30px;height:30px;font-size:22px}
 }
 @media (prefers-reduced-motion:reduce){#toast,#eggs.pop{animation:none}}
+/* round 6: today's log, house interiors, reset eggs */
+#card .clog{margin-top:5px;padding-top:4px;border-top:1px dashed #c9a25a;font-size:11.5px;color:#4a3a2a}
+#card .clog .clt{font-weight:bold;color:#7a4a24;margin-bottom:1px}
+#card .clog span{font-family:"Courier New",monospace;font-weight:bold;color:#3a72c8}
+#card .clog .cle{color:#8a6a40;font-style:italic}
+#card .cpk{margin-top:6px;font:bold 11.5px "Trebuchet MS",Verdana,sans-serif;color:#ffe68a;background:#4a3722;border:1px solid #c9a25a;border-radius:10px;padding:2px 9px;cursor:pointer;min-height:22px}
+#room{position:fixed;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;background:rgba(10,8,4,.62);padding:8px;box-sizing:border-box}
+#room.hide,#eggconf.hide{display:none}
+#room .rbox{position:relative;background:#f4e2b8;color:#3a2a1a;border:4px solid #6b4526;border-radius:8px;box-shadow:0 0 0 3px #c9a25a,0 10px 24px #000a;padding:8px 12px 10px;max-width:96vw;max-height:96vh;overflow:auto;box-sizing:border-box}
+#room .rt{font:bold 16px "Trebuchet MS",Verdana,sans-serif;margin:0 30px 6px 0;color:#2a1a0a}
+#room canvas{display:block;image-rendering:pixelated;image-rendering:crisp-edges;border:3px solid #3b2a1a;border-radius:4px;background:#000}
+#room .rs{font-size:13px;font-weight:bold;color:#4a7a32;margin-top:6px}
+#room .rf{font-size:12.5px;color:#6b4a2a;margin-top:2px}
+#room .cx{position:absolute;top:3px;right:4px;width:30px;height:30px;border:0;background:none;color:#7a4a24;font:bold 22px/28px "Trebuchet MS",Verdana,sans-serif;cursor:pointer;padding:0}
+#room .cx:focus-visible,#eggconf button:focus-visible,#eggreset:focus-visible,#card .cpk:focus-visible{outline:2px solid #ffd970;outline-offset:2px}
+#eggreset{font:bold 11px "Trebuchet MS",Verdana,sans-serif;color:#e8d8b0;background:none;border:1px solid #8a6a40;border-radius:12px;padding:2px 8px;cursor:pointer;line-height:1.5;min-height:22px}
+#eggreset:hover{background:#5e4630}
+#eggconf{background:#fff8e4;color:#3a2a1a;border:2px solid #c9a25a;border-radius:8px;padding:7px 9px;margin:0 0 8px;font-size:12.5px}
+#eggconf button{font:bold 12px "Trebuchet MS",Verdana,sans-serif;margin:6px 6px 0 0;border-radius:10px;padding:3px 10px;cursor:pointer;border:1px solid #6b4526;min-height:26px}
+#eggconf .yes{background:#b8483a;color:#fff}
+#eggconf .no{background:#f4e2b8;color:#3a2a1a}
+@media (pointer:coarse){#eggreset{font-size:13px;padding:5px 11px;min-height:32px;border-radius:16px}#card .cpk{font-size:13px;min-height:30px}#eggconf button{min-height:34px;font-size:13.5px}}
