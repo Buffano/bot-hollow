@@ -3,63 +3,63 @@
   "name": "Friday",
   "role": "Team lead",
   "state": "idle",
-  "last_active_bucket": "10h ago",
-  "updated_at": "2026-11-05T07:17:14Z"
+  "last_active_bucket": "13h ago",
+  "updated_at": "2026-11-05T10:18:41Z"
  },
  {
   "name": "Gladdus",
   "role": "Librarian",
   "state": "idle",
-  "last_active_bucket": "16h ago",
-  "updated_at": "2026-11-05T07:17:14Z"
+  "last_active_bucket": "19h ago",
+  "updated_at": "2026-11-05T10:18:41Z"
  },
  {
   "name": "Coach",
   "role": "Training coach",
   "state": "idle",
-  "last_active_bucket": "16h ago",
-  "updated_at": "2026-11-05T07:17:14Z"
+  "last_active_bucket": "19h ago",
+  "updated_at": "2026-11-05T10:18:41Z"
  },
  {
   "name": "Clima",
   "role": "Weather watcher",
   "state": "idle",
-  "last_active_bucket": "16h ago",
-  "updated_at": "2026-11-05T07:17:14Z"
+  "last_active_bucket": "19h ago",
+  "updated_at": "2026-11-05T10:18:41Z"
  },
  {
   "name": "ResI",
   "role": "Industry news",
   "state": "idle",
-  "last_active_bucket": "16h ago",
-  "updated_at": "2026-11-05T07:17:14Z"
+  "last_active_bucket": "19h ago",
+  "updated_at": "2026-11-05T10:18:41Z"
  },
  {
   "name": "Dos",
   "role": "Trends scout",
   "state": "idle",
-  "last_active_bucket": "16h ago",
-  "updated_at": "2026-11-05T07:17:14Z"
+  "last_active_bucket": "19h ago",
+  "updated_at": "2026-11-05T10:18:41Z"
  },
  {
   "name": "Mark",
   "role": "Marketing scout",
   "state": "idle",
-  "last_active_bucket": "14h ago",
-  "updated_at": "2026-11-05T07:17:14Z"
+  "last_active_bucket": "17h ago",
+  "updated_at": "2026-11-05T10:18:41Z"
  },
  {
   "name": "Luke",
   "role": "Study partner",
   "state": "idle",
-  "last_active_bucket": "16h ago",
-  "updated_at": "2026-11-05T07:17:14Z"
+  "last_active_bucket": "19h ago",
+  "updated_at": "2026-11-05T10:18:41Z"
  },
  {
   "name": "Peter",
   "role": "Web builder",
   "state": "idle",
-  "last_active_bucket": "16h ago",
-  "updated_at": "2026-11-05T07:17:14Z"
+  "last_active_bucket": "19h ago",
+  "updated_at": "2026-11-05T10:18:41Z"
  }
 ]
