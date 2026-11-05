@@ -4,62 +4,62 @@
   "role": "Team lead",
   "state": "idle",
   "last_active_bucket": "16h ago",
-  "updated_at": "2026-11-05T13:11:03Z"
+  "updated_at": "2026-11-05T13:21:05Z"
  },
  {
   "name": "Gladdus",
   "role": "Librarian",
   "state": "idle",
-  "last_active_bucket": "21h ago",
-  "updated_at": "2026-11-05T13:11:03Z"
+  "last_active_bucket": "22h ago",
+  "updated_at": "2026-11-05T13:21:05Z"
  },
  {
   "name": "Coach",
   "role": "Training coach",
   "state": "idle",
-  "last_active_bucket": "21h ago",
-  "updated_at": "2026-11-05T13:11:03Z"
+  "last_active_bucket": "22h ago",
+  "updated_at": "2026-11-05T13:21:05Z"
  },
  {
   "name": "Clima",
   "role": "Weather watcher",
   "state": "filed",
   "last_active_bucket": "2h ago",
-  "updated_at": "2026-11-05T13:11:03Z"
+  "updated_at": "2026-11-05T13:21:05Z"
  },
  {
   "name": "ResI",
   "role": "Industry news",
   "state": "idle",
-  "last_active_bucket": "21h ago",
-  "updated_at": "2026-11-05T13:11:03Z"
+  "last_active_bucket": "22h ago",
+  "updated_at": "2026-11-05T13:21:05Z"
  },
  {
   "name": "Dos",
   "role": "Trends scout",
   "state": "working",
   "last_active_bucket": "just now",
-  "updated_at": "2026-11-05T13:11:03Z"
+  "updated_at": "2026-11-05T13:21:05Z"
  },
  {
   "name": "Mark",
   "role": "Marketing scout",
   "state": "idle",
   "last_active_bucket": "20h ago",
-  "updated_at": "2026-11-05T13:11:03Z"
+  "updated_at": "2026-11-05T13:21:05Z"
  },
  {
   "name": "Luke",
   "role": "Study partner",
   "state": "idle",
-  "last_active_bucket": "21h ago",
-  "updated_at": "2026-11-05T13:11:03Z"
+  "last_active_bucket": "22h ago",
+  "updated_at": "2026-11-05T13:21:05Z"
  },
  {
   "name": "Peter",
   "role": "Web builder",
   "state": "idle",
-  "last_active_bucket": "21h ago",
-  "updated_at": "2026-11-05T13:11:03Z"
+  "last_active_bucket": "22h ago",
+  "updated_at": "2026-11-05T13:21:05Z"
  }
 ]
