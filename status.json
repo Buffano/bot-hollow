@@ -3,63 +3,63 @@
   "name": "Friday",
   "role": "Team lead",
   "state": "idle",
-  "last_active_bucket": "13h ago",
-  "updated_at": "2026-11-05T10:43:57Z"
+  "last_active_bucket": "14h ago",
+  "updated_at": "2026-11-05T11:21:01Z"
  },
  {
   "name": "Gladdus",
   "role": "Librarian",
   "state": "idle",
-  "last_active_bucket": "19h ago",
-  "updated_at": "2026-11-05T10:43:57Z"
+  "last_active_bucket": "20h ago",
+  "updated_at": "2026-11-05T11:21:01Z"
  },
  {
   "name": "Coach",
   "role": "Training coach",
   "state": "idle",
-  "last_active_bucket": "19h ago",
-  "updated_at": "2026-11-05T10:43:57Z"
+  "last_active_bucket": "20h ago",
+  "updated_at": "2026-11-05T11:21:01Z"
  },
  {
   "name": "Clima",
   "role": "Weather watcher",
-  "state": "working",
-  "last_active_bucket": "just now",
-  "updated_at": "2026-11-05T10:43:57Z"
+  "state": "filed",
+  "last_active_bucket": "under 1h ago",
+  "updated_at": "2026-11-05T11:21:01Z"
  },
  {
   "name": "ResI",
   "role": "Industry news",
   "state": "idle",
-  "last_active_bucket": "19h ago",
-  "updated_at": "2026-11-05T10:43:57Z"
+  "last_active_bucket": "20h ago",
+  "updated_at": "2026-11-05T11:21:01Z"
  },
  {
   "name": "Dos",
   "role": "Trends scout",
   "state": "idle",
-  "last_active_bucket": "19h ago",
-  "updated_at": "2026-11-05T10:43:57Z"
+  "last_active_bucket": "20h ago",
+  "updated_at": "2026-11-05T11:21:01Z"
  },
  {
   "name": "Mark",
   "role": "Marketing scout",
   "state": "idle",
-  "last_active_bucket": "17h ago",
-  "updated_at": "2026-11-05T10:43:57Z"
+  "last_active_bucket": "18h ago",
+  "updated_at": "2026-11-05T11:21:01Z"
  },
  {
   "name": "Luke",
   "role": "Study partner",
   "state": "idle",
-  "last_active_bucket": "19h ago",
-  "updated_at": "2026-11-05T10:43:57Z"
+  "last_active_bucket": "20h ago",
+  "updated_at": "2026-11-05T11:21:01Z"
  },
  {
   "name": "Peter",
   "role": "Web builder",
   "state": "idle",
-  "last_active_bucket": "19h ago",
-  "updated_at": "2026-11-05T10:43:57Z"
+  "last_active_bucket": "20h ago",
+  "updated_at": "2026-11-05T11:21:01Z"
  }
 ]
