@@ -3,63 +3,63 @@
   "name": "Friday",
   "role": "Team lead",
   "state": "idle",
-  "last_active_bucket": "17h ago",
-  "updated_at": "2026-11-05T14:17:00Z"
+  "last_active_bucket": "21h ago",
+  "updated_at": "2026-11-06T13:17:52Z"
  },
  {
   "name": "Gladdus",
   "role": "Librarian",
   "state": "idle",
-  "last_active_bucket": "23h ago",
-  "updated_at": "2026-11-05T14:17:00Z"
+  "last_active_bucket": "22h ago",
+  "updated_at": "2026-11-06T13:17:52Z"
  },
  {
   "name": "Coach",
   "role": "Training coach",
   "state": "idle",
-  "last_active_bucket": "23h ago",
-  "updated_at": "2026-11-05T14:17:00Z"
+  "last_active_bucket": "22h ago",
+  "updated_at": "2026-11-06T13:17:52Z"
  },
  {
   "name": "Clima",
   "role": "Weather watcher",
   "state": "filed",
-  "last_active_bucket": "3h ago",
-  "updated_at": "2026-11-05T14:17:00Z"
+  "last_active_bucket": "2h ago",
+  "updated_at": "2026-11-06T13:17:52Z"
  },
  {
   "name": "ResI",
   "role": "Industry news",
-  "state": "filed",
-  "last_active_bucket": "under 1h ago",
-  "updated_at": "2026-11-05T14:17:00Z"
+  "state": "idle",
+  "last_active_bucket": "22h ago",
+  "updated_at": "2026-11-06T13:17:52Z"
  },
  {
   "name": "Dos",
   "role": "Trends scout",
-  "state": "filed",
-  "last_active_bucket": "1h ago",
-  "updated_at": "2026-11-05T14:17:00Z"
+  "state": "idle",
+  "last_active_bucket": "22h ago",
+  "updated_at": "2026-11-06T13:17:52Z"
  },
  {
   "name": "Mark",
   "role": "Marketing scout",
   "state": "idle",
-  "last_active_bucket": "21h ago",
-  "updated_at": "2026-11-05T14:17:00Z"
+  "last_active_bucket": "20h ago",
+  "updated_at": "2026-11-06T13:17:52Z"
  },
  {
   "name": "Luke",
   "role": "Study partner",
   "state": "idle",
-  "last_active_bucket": "23h ago",
-  "updated_at": "2026-11-05T14:17:00Z"
+  "last_active_bucket": "19h ago",
+  "updated_at": "2026-11-06T13:17:52Z"
  },
  {
   "name": "Peter",
   "role": "Web builder",
   "state": "idle",
-  "last_active_bucket": "23h ago",
-  "updated_at": "2026-11-05T14:17:00Z"
+  "last_active_bucket": "22h ago",
+  "updated_at": "2026-11-06T13:17:52Z"
  }
 ]
